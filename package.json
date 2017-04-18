@@ -12,6 +12,6 @@
   "dependencies": {
     "marked": "^0.3.6",
     "prismjs": "^1.6.0",
-    "vivliostyle": "^2017.2.0"
+    "vivliostyle": "next"
   }
 }

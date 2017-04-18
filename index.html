@@ -74,9 +74,6 @@
       overflow: auto;
       padding: 10px;
       color: #444;
-      font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-      font-size: 16px;
-      line-height: 1.5em
     }
 
     #page-navigation-left,
@@ -180,102 +177,22 @@
       left: 0;
       padding-left: 10px;
     }
-
-    a{ color: #0645ad; text-decoration:none;}
-    a:visited{ color: #0b0080; }
-    a:hover{ color: #06e; }
-    a:active{ color:#faa700; }
-    a:focus{ outline: thin dotted; }
-    a:hover, a:active{ outline: 0; }
-
-    p{margin:1em 0;}
-
-    img{max-width:100%;}
-
-    h1,h2,h3,h4,h5,h6{font-weight:normal;color:#111;line-height:1em;}
-    h4,h5,h6{ font-weight: bold; }
-    h1{ font-size:2.5em; }
-    h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
-    h3{ font-size:1.5em; }
-    h4{ font-size:1.2em; }
-    h5{ font-size:1em; }
-    h6{ font-size:0.9em; }
-
-    blockquote{color:#666666;margin:0;padding-left: 3em;border-left: 0.5em #EEE solid;}
-    hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
-
-    pre, code{
-      color: #000;
-      font-family:Consolas, "Liberation Mono", Menlo, Courier, monospace;
-      font-size: 0.94em; /* 0.94 = 0.88 + (1.00 - 0.88) / 2 */
-      border-radius:3px;
-      background-color: #F8F8F8;
-      border: 1px solid #CCC;
-    }
-    pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px;}
-    pre code { border: 0px !important; background: transparent !important; line-height: 1.3em; }
-    code { padding: 0 3px 0 3px; }
-    sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-    sup { top: -0.5em; }
-    sub { bottom: -0.25em; }
-    ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
-    li p:last-child { margin:0 }
-    dd { margin: 0 0 0 2em; }
-    img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-    table { border-collapse: collapse; border-spacing: 0; }
-    td, th { vertical-align: top; padding: 4px 10px; border: 1px solid #bbb; }
-    tr:nth-child(even) td, tr:nth-child(even) th { background: #eee; }
   </style>
 </head>
 <body>
   <div id="in"><form><textarea id="code">
-# pentapod 技術書典2 原稿プレビューワ
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Title&lt;/title&gt;
+  &lt;style&gt;
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-## これはなに
-
-技術書典2にてpentapodが発刊する，合同誌のレイアウトやページ数を確認するための簡易プレビューワ&エディタです．
-左ペインにMarkdownで原稿を書くと右ペインに原稿のプレビューが現れます．
-
- * Ctrl+S / Cmd+S でMarkdownファイルをダウンロードします
- * Ctrl+Shift+S / Cmd+Shift+S でMarkdownかHTMLを選んでダウンロードします
- * ドラッグ&ドロップでファイルを読み込みます
- * ファイル内容はハッシュとしてURLに保存されます
-
-## レイアウトサンプル
-
-レイアウトは編集中のため突如大胆に変わる可能性があります．
-
-### 箇条書き
-
-* サーバル
-* かばん
-* ハシビロコウ
-  - 絵文字が使えます:angel:
-
-### スニペット
-
-```javascript
-$(function(){
-  $('div').html('I am a div.');
-});
-```
-
-シンタックスハイライトに対応する言語は → http://prismjs.com/#languages-list
-
-### 表
-
-| 中央揃え | 左揃え |
-|:----------:|:---------|
-| うぇるかむ | とぅ |
-| ざ | じゃぱりぱー |
-
-### 図
-
-![404](http://lohas.nicoseiga.jp/thumb/6477133i?1486829606)
-
-## リポジトリ
-
-https://github.com/pentapod/tbf02-previewer
+&lt;/body&gt;
+&lt;/html&gt;
 </textarea></form></div>
   <div class="out-wrapper">
     <div id="out"></div>
@@ -319,26 +236,6 @@ https://github.com/pentapod/tbf02-previewer
       img_dir: window.location.origin + window.location.pathname + 'emoji'
     });
 
-    var exLang = ["abap","actionscript","ada","apacheconf","apl","applescript","asciidoc","aspnet","autohotkey","autoit","bash","basic","batch","bison","brainfuck","bro","c","clike","coffeescript","core","cpp","crystal","csharp","css-extras","css","d","dart","diff","docker","eiffel","elixir","erlang","fortran","fsharp","gherkin","git","glsl","go","graphql","groovy","haml","handlebars","haskell","haxe","http","icon","inform7","ini","j","jade","java","javascript","jolie","json","jsx","julia","keyman","kotlin","latex","less","livescript","lolcode","lua","makefile","markdown","markup","matlab","mel","mizar","monkey","nasm","nginx","nim","nix","nsis","objectivec","ocaml","oz","parigp","parser","pascal","perl","php-extras","php","powershell","processing","prolog","properties","protobuf","puppet","pure","python","q","qore","r","reason","rest","rip","roboconf","ruby","rust","sas","sass","scala","scheme","scss","smalltalk","smarty","sql","stylus","swift","tcl","textile","twig","typescript","verilog","vhdl","vim","wiki","xojo","yaml",];
-    marked.setOptions({
-      highlight: function(code, lang, cb) {
-        if (!Prism.languages[lang] && exLang.indexOf(lang) >= 0) {
-          var script = document.createElement('script');
-          script.src = 'node_modules/prismjs/components/prism-' + lang + '.min.js';
-          script.onload = function() {
-            var highlighted = Prism.highlight(code, Prism.languages[lang]);
-            cb(null, highlighted);
-          };
-          document.getElementsByTagName('head')[0].appendChild(script);
-        } else {
-          var highlighted = (Prism.languages[lang])
-            ? Prism.highlight(code, Prism.languages[lang])
-            : code;
-          cb(null, highlighted);
-        }
-      }
-    });
-
 
 
     /* ====== Vivliostyle ====== */
@@ -353,12 +250,7 @@ https://github.com/pentapod/tbf02-previewer
 
     Viewer.prototype.render = function(body) {
       const url = window.URL.createObjectURL(new Blob(
-        [`<html>
-            <head>
-              <link rel="stylesheet" href="${window.location.origin}${window.location.pathname}source/dest/main.css">
-            </head>
-            <body>${body}</body>
-          </html>`],
+          [body],
           {type: 'text/html'}
       ));
       console.log(url);
@@ -407,17 +299,11 @@ https://github.com/pentapod/tbf02-previewer
       val = val.replace(/<equation>((.*?\n)*?.*?)<\/equation>/ig, function(a, b){
         return '<img src="http://latex.codecogs.com/png.latex?' + encodeURIComponent(b) + '" />';
       });
-      marked(val, function(err, body) {
-        if (err) throw err;
-        else {
-          body = emojify.replace(body);
-          vv.render(body);
-        }
-      });
+      vv.render(emojify.replace(val));
     }
 
     var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
-      mode: 'gfm',
+      mode: 'htmlmixed',
       lineNumbers: false,
       matchBrackets: true,
       lineWrapping: true,

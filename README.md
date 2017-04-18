@@ -1,4 +1,6 @@
-# tbf02-previewer
+# Vivliostyle Live Viewer
+
+Forked from [pentapod/tbf02-previewer](https://github.com/pentapod/tbf02-previewer).
 
 ## License
 
