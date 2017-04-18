@@ -1,2 +1,3 @@
-node_modules/vivliostyle/samples/
+node_modules/
+vivliostyle/samples/
 yarn.lock

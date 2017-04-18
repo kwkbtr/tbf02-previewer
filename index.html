@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Markdown Editor</title>
-  <script src="node_modules/vivliostyle/lib/vivliostyle.min.js"></script>
+  <script src="vivliostyle/lib/vivliostyle.min.js"></script>
   <script src="emojify.js"></script>
   <script src="codemirror/lib/codemirror.js"></script>
   <script src="codemirror/overlay.js"></script>
@@ -16,8 +16,8 @@
   <script src="codemirror/lib/util/continuelist.js"></script>
   <script src="rawinflate.js"></script>
   <script src="rawdeflate.js"></script>
-  <link rel="stylesheet" href="node_modules/vivliostyle/resources/vivliostyle-viewport.css">
-  <link rel="stylesheet" href="node_modules/vivliostyle/resources/vivliostyle-viewport-screen.css" media="screen">
+  <link rel="stylesheet" href="vivliostyle/resources/vivliostyle-viewport.css">
+  <link rel="stylesheet" href="vivliostyle/resources/vivliostyle-viewport-screen.css" media="screen">
   <link rel="stylesheet" href="base16-light.css">
   <link rel="stylesheet" href="codemirror/lib/codemirror.css">
   <style>
@@ -239,7 +239,7 @@
 
     function Viewer() {
       this.viewer = new vivliostyle.viewer.Viewer({
-        userAgentRootURL: 'node_modules/vivliostyle/resources/',
+        userAgentRootURL: 'vivliostyle/resources/',
         viewportElement: document.getElementById('out'),
         debug: false
       });
